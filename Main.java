@@ -18,7 +18,7 @@ public class Main {
             cOut.write(userjoined);
             cOut.flush();
             while(true){
-            cli = new Socket("192.168.70.245", 10430);
+            cli = new Socket("localhost", 10430);
             cOut = new DataOutputStream(cli.getOutputStream());
             System.out.println("Send Message");
             String x = scan.nextLine();
